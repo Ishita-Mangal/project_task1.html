@@ -269,7 +269,7 @@ td {
 }
 table {
   height: 300px;
-  width: 1230px;
+  width: 100%;
 }
 th,
 td {
