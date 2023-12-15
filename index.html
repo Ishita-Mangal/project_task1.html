@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+      <header>
+        <div class="nav-bar">
+          <ul>
+            <li class="list">Home</li>
+            <li class="list">About Me</li>
+            <li class="list">Sign Up</li>
+            <li class="list">Gallery</li>
+            <li class="list">Time-Table</li>
+            <li class="list">Contact</li>
+          </ul>
+        </div>
+      </header>
+      <section>
+        <div class="div1">
+          <div class="intro"><h1 id="myname">Hey! I'm Ishita Mangal,</h1></div>
+          <div class="img">
+            <img class="header-img" src="header-img.jpg" height="200px" />
+          </div>
+          <div class="intro">
+            <h2 id="about">
+              a 2nd year undergraduate at<span id="iit"> IIT Kanpur</span>.
+            </h2>
+          </div>
+          <div class="intro"><h3 id="web">Learning web development.</h3></div>
+
+          <!-- About me section  -->
+        </div>
+      </section>
+      <section>
+        <div class="div2">
+          <img class="my-img" src="ishita.jpeg" height="200px" width="150px" />
+          <h3 id="ishita">Ishita</h3>
+          <div class="para-container">
+            <div class="para">
+              <p>
+                I am pursuing B.tech degree in Mechanical Engineering at IIT
+                Kanpur. I'm also thriving to learn web development. So,as a task
+                this website is for a slight demonstration of my previous
+                semester and knowing yours too!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SignUP Form -->
+      <section>
+        <form action="thanks.html" target="_blank">
+          <fieldset>
+            <h2 class="sign">Let's interact!</h2>
+
+            <!-- Name -->
+            <label for="name" class="ques">Your Name -</label><br />
+            <input
+              type="text"
+              id="text"
+              class="inp"
+              placeholder="Name"
+              required
+            /><br />
+            <!-- Email -->
+            <label for="email" class="ques">Email -</label><br />
+            <input
+              type="email"
+              id="email"
+              class="inp"
+              placeholder="Email"
+              required
+            /><br />
+            <!-- College -->
+            <label for="clg" class="ques">Your College -</label><br />
+            <input
+              type="text"
+              id="clg"
+              class="inp"
+              placeholder="College"
+              required
+            /><br />
+            <!-- Degree -->
+            <label for="deg" class="ques">Pursuing Degree -</label><br />
+            <select id="deg" value="deg" class="inp" required>
+              <option class=""></option>
+              <option class="btech">B.Tech</option>
+              <option class="bs">B.S</option>
+              <option class="mtech">M.Tech</option>
+              <option class="bsc">Bsc</option>
+              <option class="msc">Msc</option>
+              <option class="MBBS">MBBS</option>
+              <option class="mba">MBA</option></select
+            ><br />
+            <!-- Department -->
+            <label for="dpt" class="ques"
+              >If you are from engineering background, then select your
+              departement-</label
+            ><br />
+            <select id="dept" class="inp" value="dept">
+              <option class=""></option>
+              <option class="cs">Computer-Science</option>
+              <option class="ee">Electrical</option>
+              <option class="me">Mechanical</option>
+              <option class="ce">Civil</option>
+              <option class="che">Chemical</option>
+              <option class="ae">Aerospace</option>
+              <option class="eco">Economics</option>
+              <option class="es">Earth Sciences</option>
+              <option class="bsbe">Biological Sciences</option>
+              <option class="mth">Mathematics</option></select
+            ><br />
+            <!-- year -->
+            <label for="year" class="ques">Current Year- </label><br />
+            <input
+              type="number"
+              class="inp"
+              id="no"
+              min="1"
+              max="5"
+              placeholder="Year"
+              required
+            /><br />
+            <!-- College exp -->
+            <label for="txt" class="ques">Your College Experience-</label><br />
+            <textarea
+              id="clgexp"
+              class="inp"
+              name="clgexp"
+              rows="3"
+              cols="40"
+              placeholder="Write your views"
+            ></textarea
+            ><br />
+            <!-- Submit -->
+            <div class="btn-container">
+              <input type="submit" value="Submit" id="submit" class="btn" />
+              <!-- Reset -->
+              <input type="Reset" value="Reset" id="reset" class="btn" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <!-- gallery -->
+      <section>
+        <div class="div3">
+          <h2 id="prof-title">Professors</h2>
+          <div class="gallery">
+            <div class="grid grid-1">
+              <img class="prof" src="abhishek.jpg" />
+              <h2 class="name">Abhishek Gupta</h2>
+              <a
+                href="https://www.iitk.ac.in/new/abhishek-k-gupta"
+                target="_blank"
+                class="link"
+                >Visit Profile
+              </a>
+            </div>
+            <div class="grid grid-2">
+              <img class="prof" src="avinash.jpg" />
+              <h2 class="name">Avinash Kumar Agrawal</h2>
+              <a
+                href="https://www.iitk.ac.in/new/avinash-kumar-agarwal"
+                class="link"
+                target="_blank"
+                >Visit Profile
+              </a>
+            </div>
+            <div class="grid grid-3">
+              <img class="prof" src="Mimani.jpg" height="90" />
+              <h2 class="name" height="50px">Akhilesh Mimani</h2>
+              <a
+                href="https://www.iitk.ac.in/new/akhilesh-mimani"
+                target="_blank"
+                class="link"
+                >Visit Profile
+              </a>
+            </div>
+            <div class="grid grid-4">
+              <img class="prof" src="prashant.jpg" />
+              <h2 class="name">Prashant Bagad</h2>
+              <a
+                href="https://www.iitk.ac.in/new/prashant-bagad"
+                target="_blank"
+                class="link"
+                >Visit Profile
+              </a>
+            </div>
+            <div class="grid grid-5">
+              <img class="prof" src="prosenjit.png" />
+              <h2 class="name">Prosenjit Roy</h2>
+              <a
+                href="https://iitk.ac.in/new/prosenjit-roy"
+                target="_blank"
+                class="link"
+                >Visit Profile
+              </a>
+            </div>
+            <div class="grid grid-6">
+              <img class="prof" src="Saurabh.jpg" />
+              <h2 class="name">Saurabh Singh</h2>
+              <a
+                href="https://www.iitk.ac.in/new/saurabh-kumar-singh"
+                target="_blank"
+                class="link"
+                >Visit Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Course Time-table -->
+      <section>
+        <div class="table-cont">
+          <div class="title-cont">
+            <h3 class="table-title">
+              Course Time-table of previous(3rd) semester-
+            </h3>
+          </div>
+          <div class="table">
+            <table>
+              <tr>
+                <th>S.No</th>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Credits</th>
+                <th>Lectures</th>
+                <th>Tutorials</th>
+                <th>Practicals</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>ESC201</td>
+                <td>Intoduction to Electronics</td>
+                <td>Abhishek Gupta</td>
+                <td>14</td>
+                <td>MWF(8:00-9:00)</td>
+                <td>Th(8:00-9:00)</td>
+                <td>W(14:00-17:00)</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>ESO201</td>
+                <td>Thermodynamics</td>
+                <td>Avinash Kumar Agrawal</td>
+                <td>11</td>
+                <td>MWF(10:00-11:00)</td>
+                <td>Th(10:00-11:00)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ME209</td>
+                <td>Dynamics</td>
+                <td>Akhilesh Mimani</td>
+                <td>9</td>
+                <td>MWF(12:00-13:00)</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>MSO202M</td>
+                <td>Complex Variables</td>
+                <td>Saurabh Singh</td>
+                <td>6</td>
+                <td>WThF(9:00-10:00)</td>
+                <td>M(10:00-11:00)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>MSO203M</td>
+                <td>Partial Differential Equations</td>
+                <td>Prosenjit Roy</td>
+                <td>6</td>
+                <td>WThF(9:00-10:00)</td>
+                <td>M(10:00-11:00)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>PHI161</td>
+                <td>Philosophy of Beauty</td>
+                <td>Prashant Bagad</td>
+                <td>11</td>
+                <td>MWTh(18:00-19:00)</td>
+                <td>F(18:00-19:00)</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="foot">
+          <a
+            class="contact"
+            target="_blank"
+            href="https://github.com/Ishita-Mangal"
+            >Github</a
+          >
+          <a
+            class="contact"
+            target="_blank"
+            href="https://www.instagram.com/ishita_mangal01/"
+            >Instagram</a
+          >
+        </div>
+        <p class="copyright">© Ishita M. 2023 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
